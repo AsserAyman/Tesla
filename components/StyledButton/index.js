@@ -3,17 +3,18 @@ import {View, Text,ImageBackground,Pressable} from 'react-native';
 import styles from "./styles";
 const StyledButton = (props) =>{
     
-    const type = props.type;
-    const content = props.content;
-    const backColor = type === 'primary' ? 'black' : 'white';
-    const txtColor = type === 'primary' ? 'white': 'black';
+    //const type = props.type;
+    //const content = props.content;
+    //const onPress = props.onPress;
+    const {type,content,onPress} = props;
+    
+    const backColor = type === 'primary' ? '#171A20CC' : '#FFFFFFA6';
+    const txtColor = type === 'primary' ? '#FFFFFF': '#171A20';
     return(
      <View style={styles.container}>
          <Pressable
             style={[styles.button,{backgroundColor: backColor}]}
-            onPress={() => {
-                console.warn('Hey There' )
-            }}
+            onPress={() => onPress()}
          >
              <Text style={[styles.text,{color: txtColor}]}>{content}</Text>
          </Pressable>
