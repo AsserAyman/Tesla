@@ -1,5 +1,5 @@
 # Tesla
-Tesla is a react native clone of Tesla's website
+Tesla is a react native clone of Tesla's website frontend 
 
 - The Project's main targets:
      - Get familiar with react native
